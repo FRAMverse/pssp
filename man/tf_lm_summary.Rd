@@ -15,11 +15,27 @@ tf_lm_summary(.data, size_limit = 22)
 Creates a summary data with counts by legal mark category
 }
 \examples{
-\dontrun{tf_data |> tf_lm_summary()}
+\dontrun{
+tf_data |> tf_lm_summary()
+}
 
 }
 \seealso{
 Other Test Fishing: 
-\code{\link{tf_pull}()}
+\code{\link{tf_cv}()},
+\code{\link{tf_descriptive_length}()},
+\code{\link{tf_effort_summary_week}()},
+\code{\link{tf_hist}()},
+\code{\link{tf_interagency_chisq}()},
+\code{\link{tf_interagency_histogram}()},
+\code{\link{tf_interagency_lm_summary}()},
+\code{\link{tf_interagency_summary}()},
+\code{\link{tf_lm_summary_week}()},
+\code{\link{tf_map}()},
+\code{\link{tf_mortalility}()},
+\code{\link{tf_pull}()},
+\code{\link{tf_pvalue_history}()},
+\code{\link{tf_scatter}()},
+\code{\link{tf_summary}()}
 }
 \concept{Test Fishing}
