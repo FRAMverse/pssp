@@ -1,12 +1,24 @@
 Package: pssp
-Title: What the Package Does (One Line, Title Case)
+Title: Package to interface with the WDFW Puget Sound sampling database
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R:
+    person("Ty", "Garber", , "tyler.garber@dfw.wa.gov", role = c("aut", "cre"))
+Description: The pssp package serves as an interface between R and the
+    Puget Sound sampling database. It's goal is to ease the burden of
+    retrieving and analyzing sport creel information in Puget Sound.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Imports: 
+    cli,
+    DBI,
+    dplyr,
+    ggplot2,
+    lubridate,
+    odbc,
+    purrr,
+    stringr,
+    tibble,
+    tidyr,
+    withr
