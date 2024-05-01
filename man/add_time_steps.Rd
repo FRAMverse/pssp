@@ -21,6 +21,8 @@ add_time_steps(
 Adds a time step column to a dataframe
 }
 \examples{
-\dontrun{df |> add_time_steps()}
+\dontrun{
+df |> add_time_steps()
+}
 
 }

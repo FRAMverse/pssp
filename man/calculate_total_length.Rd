@@ -24,6 +24,8 @@ calculate_total_length(
 Adds StatWeek to Dataframe
 }
 \examples{
-\dontrun{df |> calculate_total_length()}
+\dontrun{
+df |> calculate_total_length()
+}
 
 }

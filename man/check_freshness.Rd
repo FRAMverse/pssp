@@ -13,5 +13,7 @@ check_freshness(days = 3)
 Checks if data is current, if it is then updates, if not passes through
 }
 \examples{
-\dontrun{check_freshness()}
+\dontrun{
+check_freshness()
+}
 }
