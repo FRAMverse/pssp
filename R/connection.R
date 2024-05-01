@@ -1,11 +1,11 @@
-#' @title Refreseshs datasources
-#' @description Refreshes all materialized views
-#' @param dsn DSN connection default 'pssp_prod64'
-#' @examples
-#' \dontrun{
-#' pssp_refresh_data()
-#' }
-#' @export
+# " @title Refreseshs datasources
+# " @description Refreshes all materialized views
+# " @param dsn DSN connection default "pssp_prod64"
+# " @examples
+# " \dontrun{
+# " pssp_refresh_data()
+# " }
+# " @export
 pssp_refresh_data <- function(dsn = "pssp_prod64") {
   cli::cli_alert_info("Refreshing data, this can take a few minutes...")
   con <- withr::local_db_connection(DBI::dbConnect(odbc::odbc(),
@@ -20,12 +20,12 @@ pssp_refresh_data <- function(dsn = "pssp_prod64") {
   cli::cli_alert_success("Data updated!")
 }
 
-#' @title Gets the last time materialized views we updated
-#' @description Gets the last time materialized views were updated
-#' @param dsn DSN connection default 'pssp_prod64'
-#' @examples
-#' pssp_last_update()
-#' @export
+# " @title Gets the last time materialized views we updated
+# " @description Gets the last time materialized views were updated
+# " @param dsn DSN connection default "pssp_prod64"
+# " @examples
+# " pssp_last_update()
+# " @export
 pssp_last_update <- function(dsn = "pssp_prod64") {
   con <- withr::local_db_connection(DBI::dbConnect(odbc::odbc(),
     dsn,
@@ -41,15 +41,15 @@ pssp_last_update <- function(dsn = "pssp_prod64") {
 }
 
 
-#' @title Queries the pssp database
-#' @description Queries the pssp database and returns a tibble
-#' @param dsn DSN connection default 'pssp_prod64'
-#' @param query SQL Query
-#' @examples
-#' \dontrun{
-#' data <- pssp_query("SELECT * FROM survey LIMIT 10;")
-#' }
-#' @export
+# " @title Queries the pssp database
+# " @description Queries the pssp database and returns a tibble
+# " @param dsn DSN connection default "pssp_prod64"
+# " @param query SQL Query
+# " @examples
+# " \dontrun{
+# " data <- pssp_query("SELECT * FROM survey LIMIT 10;")
+# " }
+# " @export
 pssp_query <- function(dsn = "pssp_prod64", query) {
   if (!is.character(query)) {
     cli::cli_abort("Query must a character string")
