@@ -52,7 +52,7 @@ pssp_last_update <- function(dsn = "pssp_prod64") {
 # " @export
 pssp_query <- function(dsn = "pssp_prod64", query) {
   if (!is.character(query)) {
-    cli::cli_abort("Query must a character string")
+    cli::cli_abort("Query must be a character string")
   }
 
   # dont want mutating commands coming through here

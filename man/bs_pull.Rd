@@ -32,4 +32,11 @@ Queries RMIS for release infomation, defaults to tagged releases
 \examples{
 \dontrun{bs_data <- bs_pull('10', '2021-11-01', '2021-12-04')}
 }
+\seealso{
+Other Boat Effort Surveys: 
+\code{\link{bs_map}()},
+\code{\link{bs_site_weights}()},
+\code{\link{bs_site_weights_in}()},
+\code{\link{bs_site_weights_out}()}
+}
 \concept{Boat Effort Surveys}
