@@ -132,7 +132,7 @@ aerial_estimator_stats <- function(.data, bad_flights = FALSE){
 
   }
 
-  cli::cli_text(cat(cli::col_blue("adjProp: "),cli::col_red(adjusted_proportion)))
-  cli::cli_text(cat(cli::col_yellow("adjVar: "),cli::col_red(adjusted_variance)))
+  cli::cli_text(cat(cli::col_blue("Adjusted Proportion: "),cli::col_red(adjusted_proportion)))
+  cli::cli_text(cat(cli::col_yellow("Adjusted Variance: "),cli::col_red(adjusted_variance)))
 
 }

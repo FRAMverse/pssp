@@ -38,6 +38,7 @@ Other Dockside Creel Surveys:
 \code{\link{ds_releases_pull}()},
 \code{\link{ds_salmon_summary}()},
 \code{\link{ds_sampling_effort_sampler_summary}()},
-\code{\link{ds_sampling_effort_summary}()}
+\code{\link{ds_sampling_effort_summary}()},
+\code{\link{marine_pull}()}
 }
 \concept{Dockside Creel Surveys}
