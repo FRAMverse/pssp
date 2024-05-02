@@ -36,13 +36,16 @@ marine_pull <- function(catch_area, start_date, end_date, int_dates = FALSE,
     check_freshness()
   }
 
-  query <- pssp_query(query =
-                           glue::glue("select
+  query <- pssp_query(
+    query =
+      glue::glue(
+        "select
               *
              from mvw_dockside_marine
              where
                   survey_datetime between '{start_date}' and '{end_date}' and
-                  catch_area_code in('{catch_area}')")
+                  catch_area_code in('{catch_area}')"
+      )
   )
 
   if (int_dates){
