@@ -24,7 +24,9 @@ pssp_refresh_data <- function(dsn = "pssp_prod64") {
 #' @description Gets the last time materialized views were updated
 #' @param dsn DSN connection default "pssp_prod64"
 #' @examples
+#' \dontrun{
 #' pssp_last_update()
+#' }
 #' @export
 pssp_last_update <- function(dsn = "pssp_prod64") {
   con <- withr::local_db_connection(DBI::dbConnect(odbc::odbc(),

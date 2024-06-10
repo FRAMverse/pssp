@@ -13,5 +13,7 @@ pssp_last_update(dsn = "pssp_prod64")
 Gets the last time materialized views were updated
 }
 \examples{
+\dontrun{
 pssp_last_update()
+}
 }
