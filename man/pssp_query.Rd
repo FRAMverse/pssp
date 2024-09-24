@@ -4,12 +4,12 @@
 \alias{pssp_query}
 \title{Queries the pssp database}
 \usage{
-pssp_query(dsn = "pssp_prod64", query)
+pssp_query(query, dsn = "pssp_prod64")
 }
 \arguments{
-\item{dsn}{DSN connection default "pssp_prod64"}
-
 \item{query}{SQL Query}
+
+\item{dsn}{DSN connection default "pssp_prod64"}
 }
 \description{
 Queries the pssp database and returns a tibble

@@ -45,8 +45,8 @@ pssp_last_update <- function(dsn = "pssp_prod64") {
 
 #' @title Queries the pssp database
 #' @description Queries the pssp database and returns a tibble
-#' @param dsn DSN connection default "pssp_prod64"
 #' @param query SQL Query
+#' @param dsn DSN connection default "pssp_prod64"
 #' @examples
 #' \dontrun{
 #' data <- pssp_query("SELECT * FROM survey LIMIT 10;")
