@@ -52,7 +52,7 @@ pssp_last_update <- function(dsn = "pssp_prod64") {
 #' data <- pssp_query("SELECT * FROM survey LIMIT 10;")
 #' }
 #' @export
-pssp_query <- function(dsn = "pssp_prod64", query) {
+pssp_query <- function(query, dsn = "pssp_prod64") {
   if (!is.character(query)) {
     cli::cli_abort("Query must be a character string")
   }
