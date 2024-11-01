@@ -13,6 +13,14 @@ although functions focused on analysis will work give the proper dataset.
 
 ## Installation
 
+pssp can be installed through R-Universe like so:
+
+``` r
+install.packages("pssp", repos = "https://framverse.r-universe.dev")
+```
+
+Alternatively, with Rtools and `devtools` or `remotes` installed, pssp can be installed like so:
+
 ``` r
 devtools::install_github("FRAMverse/pssp")
 
